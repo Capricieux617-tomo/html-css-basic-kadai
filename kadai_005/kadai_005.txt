@@ -1,0 +1,51 @@
+PS C:\Users\81803> cd
+PS C:\Users\81803> mkdir git_challenge
+
+
+    ディレクトリ: C:\Users\81803
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        2024/06/29      0:15                git_challenge
+
+
+PS C:\Users\81803> cd git_challenge
+PS C:\Users\81803\git_challenge> git init
+Initialized empty Git repository in C:/Users/81803/git_challenge/.git/
+PS C:\Users\81803\git_challenge> git add git_challenge
+fatal: pathspec 'git_challenge' did not match any files
+PS C:\Users\81803\git_challenge> git add hello_world.txt
+fatal: pathspec 'hello_world.txt' did not match any files
+PS C:\Users\81803\git_challenge> git add hello_world.txt
+PS C:\Users\81803\git_challenge> git commit -m "hello_world.txtを追加"
+[main (root-commit) c25ed89] hello_world.txtを追加
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 hello_world.txt
+  
+PS C:\Users\81803\git_challenge> git add hello_world.txt
+PS C:\Users\81803\git_challenge> git commit -m "Hello,worldを追記”
+[main 642e177] Hello,worldを追記
+ 1 file changed, 2 insertions(+)
+PS C:\Users\81803\git_challenge> git add hello_world.txt
+PS C:\Users\81803\git_challenge> git log --oneline
+642e177 (HEAD -> main) Hello,worldを追記
+c25ed89 hello_world.txtを追加
+PS C:\Users\81803\git_challenge> git add hello_world.txt
+PS C:\Users\81803\git_challenge> git log --oneline
+642e177 (HEAD -> main) Hello,worldを追記
+c25ed89 hello_world.txtを追加
+PS C:\Users\81803\git_challenge> git diff --staged
+PS C:\Users\81803\git_challenge> git log
+commit 642e17748ae5c3373a6819d2f4530c2789af6265 (HEAD -> main)
+Author: Capricieux617-tomo <capricieux.6.17@gmail.com>
+Date:   Sat Jun 29 00:40:21 2024 +0900
+
+    Hello,worldを追記
+
+commit c25ed896ad1973f5ef858b2d9c3b563fd715626b
+Author: Capricieux617-tomo <capricieux.6.17@gmail.com>
+Date:   Sat Jun 29 00:27:58 2024 +0900
+
+    hello_world.txtを追加
+PS C:\Users\81803\git_challenge>
